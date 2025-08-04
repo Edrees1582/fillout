@@ -1,0 +1,12 @@
+<header class="app-header">
+    <h1>Survey Creator</h1>
+    <nav class="app-nav">
+        <a routerLink="/creator" routerLinkActive="active">Creator</a>
+        <a routerLink="/runtime" routerLinkActive="active">Runtime</a>
+
+        <button (click)="toggleLocale()">{{currentLocale === 'ar' ? 'English' : 'عربي' }}</button>
+    </nav>
+</header>
+<main class="app-main">
+    <router-outlet />
+</main>
